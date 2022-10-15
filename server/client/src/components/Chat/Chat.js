@@ -20,7 +20,7 @@ const Chat = ()=>{
     const [ message, setMessage ] = useState("");
     const [ messages, setMessages ] = useState([]);
 
-    const ENDPOINT = 'http://localhost:5000';
+    const ENDPOINT = 'https://chatapp2-o.herokuapp.com/';
 
     useEffect(()=>{
         const { name, room } = queryString.parse(location.search);
